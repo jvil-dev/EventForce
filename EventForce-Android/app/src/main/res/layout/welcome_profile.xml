@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10"
+    android:padding="16dp"
+    tools:layout_editor_absoluteX="63dp"
+    tools:layout_editor_absoluteY="6dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/welcome_image"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/welcome_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/student_button"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:padding="12dp"
+        android:text="@string/student"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/personal_use_button"
+        app:layout_constraintStart_toStartOf="@+id/personal_use_button"
+        app:layout_constraintTop_toBottomOf="@+id/personal_use_button" />
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:text="@string/welcome_message"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/personal_use_button"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/blue"
+        android:padding="12dp"
+        android:text="@string/personal_use"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/select_profile"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/select_profile"
+        app:layout_constraintTop_toBottomOf="@+id/select_profile" />
+
+    <TextView
+        android:id="@+id/select_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="@string/select_profile"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/welcome_message"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/welcome_message"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
