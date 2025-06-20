@@ -4,7 +4,7 @@ This artifact is the database and authentication backend for the **EventForce** 
 
 **2. Justify the inclusion of the artifact in your ePortfolio. Why did you select this item? What specific components of the artifact showcase your skills and abilities in software development? How did the enhancement improve the artifact? What specific skills did you demonstrate in the enhancement?**
 
-I selected this artifact becuase it's a good example of migrating a legacy system to a secure, scalable, and cloud-native architecture. The original Android app was limited by its local database, which stored user passwords in plaintext. This presented a major security vulnerability.
+I selected this artifact because it's a good example of migrating a legacy system to a secure, scalable, and cloud-native architecture. The original Android app was limited by its local database, which stored user passwords in plaintext. This presented a major security vulnerability.
 
 The original database checked for a user by comparing the provided plaintext password directly against the plaintext password stored in the database.
 
